@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{%block title %}Title{% endblock %}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+<nav class="pl-4 ">
+    <a  class="btn btn-primary" href="{{url_for('home')}}">Головна</a>
+    <a  class="btn btn-primary" href="{{url_for('service')}}">Послуги</a>
+    <a  class="btn btn-primary" href="{{url_for('blog')}}">Блог</a>
+	<a  class="btn btn-primary" href="{{url_for('shop')}}">Магазин</a>
+
+	<form method="POST">
+<input type="submit" value="Передбачення для тебе ♥" class="btn btn-warning btn-sm m-3" onclick="return confirm('{{ predict1 }}')">
+	</form>
+</nav>
+
+
+<head>
+	<title>Онлайн консультації таролога</title>
+	<style>
+		body {
+				background-color: #154c79;
+			color: white;
+			font-family: Arial, Helvetica, sans-serif;
+			text-align: center;
+			padding-top: 50px;
+			font-size: 24px;
+			line-height: 1.5;}
+		.pl-4{
+        margin-left: -23px;
+        justify-content: center;
+        text-align: center;}
+	</style>
+</head>
+<h1>Онлайн консультації таролога</h1>
+<header>
+<img src="https://cdn-icons-png.flaticon.com/512/5335/5335109.png" width="200" height="200">
+<title>НА КОЖНЕ ПИТАННЯ Є ВІДПОВІДЬ - МИ ДОПОМОЖЕМО ЇЇ ЗНАЙТИ</title>
+
+	<h4 class="m-5">НА КОЖНЕ ПИТАННЯ Є ВІДПОВІДЬ - МИ ДОПОМОЖЕМО ЇЇ ЗНАЙТИ</h4>
+<div class="row">
+	<div class="col">
+		<img src="https://cdn.icon-icons.com/icons2/931/PNG/512/hearts_love_icon-icons.com_72429.png" width="235" height="235"> <br>
+		<a  class="btn btn-info mb-3" href="{{url_for('love')}}">Любоф</a>
+
+	</div>
+	<div class="col">
+		<img src="https://cdn-icons-png.flaticon.com/512/3479/3479907.png" width="200" height="200"><br><br>
+		<a  class="btn btn-info mb-3" href="{{url_for('future')}}">Майбутнє</a>
+	</div>
+	<div class="col">
+		<img src="https://cdn-icons-png.flaticon.com/512/1431/1431096.png" width="200" height="200"><br><br>
+		<a  class="btn btn-info mb-3" href="{{url_for('finances')}}">Фінанси</a>
+	</div>
+
+</div>
+	
+</header>
+</body>
+
+</html>
