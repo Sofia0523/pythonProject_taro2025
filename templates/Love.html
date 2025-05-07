@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
+<nav class="pl-4">
+    <a  class="btn btn-primary" href="{{url_for('home')}}">Головна</a>
+    <a  class="btn btn-primary" href="{{url_for('service')}}">Послуги</a>
+    <a  class="btn btn-primary" href="{{url_for('blog')}}">Блог</a>
+	<a  class="btn btn-primary" href="{{url_for('shop')}}">Магазин</a>
+</nav>
+
+    <style>
+        body {
+            background: #154c79;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            padding: 40px;
+        }
+
+        .card-4 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card-item {
+            margin: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .card-item:hover {
+            transform: scale(1.05);
+        }
+
+        .pl-4{
+        margin-left: -23px;
+        justify-content: center;
+        text-align: center;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card-4">
+ <a href="{{url_for('love_answer')}}">
+        <div class="card-item"><img src="{{love[1]}}" width="300" height="450"></div>
+ </a>
+ <a href="{{url_for('love_answer')}}">
+        <div class="card-item"><img src="{{love[1]}}" width="300" height="450"></div>
+ </a>
+ <a href="{{url_for('love_answer')}}">
+        <div class="card-item"><img src="{{love[1]}}" width="300" height="450"></div>
+ </a>
+    </div>
+</body>
+</html>

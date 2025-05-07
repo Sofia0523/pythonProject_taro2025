@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{%block title %}Title{% endblock %}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<nav class="pl-4">
+    <a  class="btn btn-primary" href="{{url_for('home')}}">Головна</a>
+    <a  class="btn btn-primary" href="{{url_for('service')}}">Послуги</a>
+    <a  class="btn btn-primary" href="{{url_for('blog')}}">Блог</a>
+	<a  class="btn btn-primary" href="{{url_for('shop')}}">Магазин</a>
+</nav>
+
+
+    <style>
+        body {
+            background: #154c79;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 40px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            color: #ffd700;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 40px;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+
+        }
+
+        a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        a:hover {
+            color: #ffbf00; }
+
+        .pl-4{
+        margin-left: -23px;
+        justify-content: center;
+        text-align: center;}
+
+
+    </style>
+</head>
+<body>
+    <h1>Послуги</h1>
+    <p>
+        Доброго дня, вечора чи ранку, а може ночі дорогий клієнт! Тебе вітає наша спільнота з консультацій тарологів! Наш сайт надає послуги погляду в майбутнє. Ми надаємо як безкоштовні, так і платні консультації.
+    </p>
+    <p>
+        Безоплатний розклад ви можете отримати за трьома варіаціями (проблемами) на головній сторінці за кнопками:
+        <a href="{{url_for('love')}}">«Любов»</a>,
+        <a href="{{url_for('future')}}">«Майбутнє»</a>,
+        <a href="{{url_for('finances')}}">«Фінанси»</a>.
+    </p>
+    <p>
+        Варто розуміти, що тут більш розважальний контент! Ці три розклади працюють за допомогою рандому, у них не розглядається ваша ситуація, бо це поки не можливо. Якщо ви бажаєте дізнатися саме щось конкретне, будь-ласка запишіться на консультацію до нашого таролога за номером телефону: <span style="font-weight: bold; color: #ffd700;">+380 33 333 3333</span>, або через телеграм канал, посилання на нього знайдете на сторінці <a href="{{url_for('blog')}}">«Блог»</a>.
+    </p>
+    <p>
+        Також у нас звичайно є і індивідуальна консультація (з цінами можете ознайомитись нижче).<br>
+        В платну консультацію входить:
+        <ol>
+        <li><h5>Детальний аналіз вашої ситуації</h5></li>
+            <li><h5>Розклад на таро з інтерпретацією</h5></li>
+            <li><h5>Рекомендації та поради від досвідченого таролога</h5></li>
+            <li><h5>Зворотній зв'язок та підтримка</h5></li>
+        </ol>
+    </p>
+<a class="btn btn-primary" href="{{url_for('form')}}">Записатися на онлайн консультацію</a>
+</body>
+</html>
