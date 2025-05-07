@@ -1,0 +1,1 @@
+# pythonProject_taro2025
